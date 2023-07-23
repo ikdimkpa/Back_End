@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script made the task 0 fix to be short and sweet
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx start
+rm /run/nginx.pid

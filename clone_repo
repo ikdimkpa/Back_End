@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git clone https://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@github.com/ikdimkpa/"$1".git

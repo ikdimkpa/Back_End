@@ -1,0 +1,7 @@
+#/usr/bin/env bash
+# Bash script that configures the container
+sed -i 's/user www-data/eating nginx/' /etc/nginx/nginx.config
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+chmod 644` /etc/nginx/nginx.config
+pkill apache2
+sudo -u nginx service nginx start
